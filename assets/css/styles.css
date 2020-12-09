@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navigation{
+    background-color: rgb(1, 1, 88);
+    display: flex;
+    height: 5vh;
+    align-items: center;
+    object-fit: contain;
+    width: 100%;
+    position: sticky;
+}
+
+.header{
+    width: 92%;
+    margin-left: 10px;
+}
+
+.header>a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.strongTitle{
+    background-color: #fff;
+    color: rgb(1, 1, 88);
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 13px;
+    padding: 5px;
+}
+.menu{
+    display: flex;
+}
+
+.close, .menu{
+    color: #fff;
+    font-weight: 400;
+    margin-right: 10px;
+    float: right;
+}
+
+
+
+/* hamburger icon */
+.line{
+    background-color: #fff;
+    width: 25px;
+    height: 1.7px;
+    margin: 4px;
+}
+
+@media screen and (max-width: 480px) {
+
+    .header {
+        width: 85%;
+    }
+
+   .header>a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+   }
+
+    .strongTitle {
+        letter-spacing: 1.5px;
+        font-weight: 700;
+        font-size: 9px;
+        padding: 4px;
+    }
+
+    .menu span {
+        margin-right: 3px;
+        font-size: 9px;
+        font-weight: normal;
+        margin-left: -20px;
+        align-items: center;
+        object-fit: contain;
+        display: flex;
+    }
+
+    .line {
+        width: 20px;
+        height: 1.8px;
+        margin: 3px;
+
+    }
+}
+
+
+
+/* menu */
+.sidebar {
+    background-color: rgba(4, 4, 80, 0.705);
+    color: #fff;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+}
+
+.closebtn{
+    display: none;
+}
+
+.menu-container{
+    width: 800px;
+    margin: 80px auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.sidebar span {
+    text-align: right;
+    font-size: 30px;
+    padding: 20px;
+    font-weight: normal;
+    border: 2px solid #fff;
+    
+}
+.menu-container li{
+    list-style: none;
+}
+
+.menu-container a{
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 3;
+}
+
+.button{
+    display: block;
+}
+
+.btn{
+    width: 50%;
+    padding: 16px;
+    text-transform: uppercase;
+    font-size: 15px;
+    display: block;
+    margin: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+.btn-2{
+    background-color:transparent;
+    border: 3px solid #fff;
+    color: #fff;
+}
+
+.btn-1:hover{
+    background-color:rgba(124, 181, 255, 0.856);
+}
+.btn-2:hover{
+    border-color: rgba(124, 181, 255, 0.856);
+    color: rgba(124, 181, 255, 0.856);
+}
+
+
+
+@media screen and (max-width: 768px) {
+.menu-container {
+    width: 500px;
+    margin: 80px auto;
+    
+}
+}
+
+@media screen and (max-width: 480px) {
+    .menu-container {
+        width: 300px;
+        margin: 30px auto;
+
+    }
+
+   .sidebar {
+        background-color: rgba(4, 4, 80, 0.705);
+        color: #fff;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+      
+    }
+}
