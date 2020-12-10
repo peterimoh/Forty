@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
 
 *{
     margin: 0;
@@ -43,6 +44,10 @@ body{
     display: flex;
 }
 
+.menu span{
+    cursor: pointer;
+}
+
 .close, .menu{
     color: #fff;
     font-weight: 400;
@@ -58,6 +63,7 @@ body{
     width: 25px;
     height: 1.7px;
     margin: 4px;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 480px) {
@@ -95,7 +101,6 @@ body{
         width: 20px;
         height: 1.8px;
         margin: 3px;
-
     }
 }
 
@@ -103,7 +108,7 @@ body{
 
 /* menu */
 .sidebar {
-    background-color: rgba(4, 4, 80, 0.705);
+    background-color: rgba(4, 4, 80, 0.911);
     color: #fff;
     position: absolute;
     height: 100%;
@@ -111,6 +116,7 @@ body{
     display: flex;
     flex-direction: column;
     z-index: 100;
+    position: sticky;
 }
 
 .closebtn{
@@ -120,6 +126,7 @@ body{
 .menu-container{
     width: 800px;
     margin: 80px auto;
+    margin-top: 15%;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -135,7 +142,9 @@ body{
 }
 .menu-container li{
     list-style: none;
+    border-bottom: 1px solid rgba(126, 125, 125, 0.466);
 }
+
 
 .menu-container a{
     color: #fff;
@@ -160,6 +169,7 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     letter-spacing: 3px;
+    border: 1px solid transparent;
 }
 
 .btn-2{
@@ -169,6 +179,7 @@ body{
 }
 
 .btn-1:hover{
+    color: #fff;
     background-color:rgba(124, 181, 255, 0.856);
 }
 .btn-2:hover{
@@ -188,10 +199,18 @@ body{
 
 @media screen and (max-width: 480px) {
     .menu-container {
-        width: 300px;
-        margin: 30px auto;
-
+        width: 400px;
+        margin-top: 150px;
     }
+.sidebar span {
+    text-align: right;
+    font-size: 20px;
+    padding: 14px;
+    font-weight: normal;
+    border: 1px solid #fff;
+
+}
+   
 
    .sidebar {
         background-color: rgba(4, 4, 80, 0.705);
@@ -201,4 +220,72 @@ body{
         width: 100%;
       
     }
+}
+
+
+/* hero section */
+.heroSection{
+    background-color: rgb(1, 1, 88);
+    height: 65vh;
+}
+
+.heroContent{
+    top: 25%;
+    left: 5%;
+    transform: translate(0%,0%);
+    position: absolute;
+    width: 70%;
+    color: #fff;
+    text-align: left;
+}
+
+.heroContent h1{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.heroTxt {
+    display: flex;
+    object-fit: contain;
+    align-items: center;
+   font-family: 'Ubuntu Mono', monospace;
+   font-weight: 560;
+   letter-spacing: 2px;
+}
+
+.hero-btn{
+    width: 30%;
+    margin-left: 10px;
+    background-color: transparent;
+    color: #fff;
+    border: 3px solid #fff;
+}
+
+.hero-btn:hover{
+    color: rgba(124, 181, 255, 0.856);
+    border-color: rgba(124, 181, 255, 0.856);
+}
+
+@media screen and (max-width: 480px) {
+    .heroContent {
+        position: absolute;
+        width: 90%;
+    }
+    .heroContent h1 {
+        font-size: 1.7rem;
+    }
+.hero-btn {
+    width: 40%;
+    border: 2px solid #fff;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.heroTxt {
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    font-size: 12px;
+}
+
 }
