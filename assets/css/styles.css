@@ -311,6 +311,10 @@ body {
     text-align: center;
     color: rgb(83, 83, 83);
     font-size: 15px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
     /* 320px — 480px: Mobile devices 481px — 768px: iPads,
