@@ -313,6 +313,7 @@ body {
     font-size: 15px;
     position: sticky;
     top: 100%;
+    bottom: 0%;
     width: 100%;
 }
 
