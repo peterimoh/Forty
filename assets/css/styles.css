@@ -312,7 +312,7 @@ body {
     color: rgb(83, 83, 83);
     font-size: 15px;
     position: sticky;
-    top: 0;
+    top: 100%;
     width: 100%;
 }
 
